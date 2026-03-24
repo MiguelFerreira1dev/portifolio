@@ -214,6 +214,9 @@ a {
   text-decoration: none;
   color: var(--claro);
 }
+footer {
+  text-align: center;
+}
 @media (max-width: 768px) {
   .foto-pfp {
     width: 180px;
