@@ -122,12 +122,15 @@
     <h2 class="contato-title">Entre em Contato</h2>
     <form class="contato-form" id="form" onsubmit="sendmsg(event)">
       <div class="contato-div">
-        <input placeholder="Nome" id="nome" class="contato-nome-form" />
-        <textarea rows="7" id="mensagem" class="contato-nome-form" placeholder="Digite Sua Mensagem"></textarea>
+        <input required placeholder="Nome" id="nome" class="contato-nome-form" />
+        <textarea rows="7" id="mensagem" class="contato-nome-form" required placeholder="Digite Sua Mensagem"></textarea>
       </div>
       <button type="submit" class="button-contato">Enviar Whatsapp</button>
     </form>
   </section>
+  <footer>
+    <h3>© 2026 Miguel Ferreira. Todos os direitos reservados.</h3>
+  </footer>
   <script>
     function sendmsg(event) {
       event.preventDefault()
@@ -143,26 +146,16 @@
 
       window.open(url, "_blank");
     }
-    document.getElementById("form").addEventListener("submit", function(e) {
-  const nome = document.getElementById("nome").value.trim();
-  const mensagem = document.getElementById("mensagem").value.trim();
-
-  if (!nome || !mensagem) {
-    e.preventDefault();
-    alert("Preencha todos os campos!");
-  }
-});
-  </script>
-  <footer>
-    <h3>© 2026 Miguel Ferreira. Todos os direitos reservados.</h3>
-  </footer>
-  <script>
   const menuToggle = document.getElementById("menuToggle");
   const menu = document.getElementById("menu");
 
                 menuToggle.addEventListener("click", () => {
     menu.classList.toggle("active");
   });
+    if (!nome || !mensagem) {
+  e.preventDefault();
+  console.log("Campos vazios");
+}
 </script>
 </body>
 
