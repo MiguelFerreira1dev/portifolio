@@ -135,8 +135,8 @@
     function sendmsg(event) {
       event.preventDefault()
 
-      const nome = document.getElementById("nome").value;
-      const mensagem = document.getElementById("mensagem").value;
+      const nome = document.getElementById("nome").value.trim();
+      const mensagem = document.getElementById("mensagem").value.trim();
       const telefone = "5521975828946";
 
       const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
