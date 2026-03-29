@@ -30,13 +30,13 @@
   <main id="inicio" class="main">
     <img src="./img/pfp.png" alt="Foto de Miguel Ferreira" class="foto-pfp" />
     <h1>Miguel Ferreira</h1>
-    <p class="main-p">Estudante de Ciência da computação</p>
+    <p class="main-p">Estudante de Ciência da Computação</p>
   </main>
   <section id="sobre" class="sobre">
     <h2 class="sobre-title">Sobre Mim</h2>
     <div class="sobre-box">
       <p class="sobre-p">
-        Olá! Sou Miguel Ferreira, Tenho grande interesse pela área
+        Olá! Sou Miguel Ferreira, tenho grande interesse pela área
         de tecnologia e estou em constante busca por evolução, adquirindo
         novos conhecimentos e aprimorando minhas habilidades técnicas. Meu
         objetivo é desenvolver soluções eficientes e inovadoras para problemas
@@ -111,7 +111,7 @@
           <img src="./img/spider-new.png" alt="" class="projetos-img" />
           <h3 class="projetos-info">Homem Aranha: Um Novo Dia</h3>
           <p class="projetos-p">
-            O trailer de "Homem-Aranha: Um Novo Dia" foi divulgado nesta
+            O trailer de "Homem-Aranha: Um Novo Dia" foi divulgado na
             quarta-feira (18). Com estreia marcada para 30 de julho.
           </p>
         </div>
@@ -143,6 +143,15 @@
 
       window.open(url, "_blank");
     }
+    document.getElementById("form").addEventListener("submit", function(e) {
+  const nome = document.getElementById("nome").value.trim();
+  const mensagem = document.getElementById("mensagem").value.trim();
+
+  if (!nome || !mensagem) {
+    e.preventDefault();
+    alert("Preencha todos os campos!");
+  }
+});
   </script>
   <footer>
     <h3>© 2026 Miguel Ferreira. Todos os direitos reservados.</h3>
