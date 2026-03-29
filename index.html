@@ -137,6 +137,11 @@
 
       const nome = document.getElementById("nome").value.trim();
       const mensagem = document.getElementById("mensagem").value.trim();
+      
+      if (!nome || !mensagem) {
+  alert("Preencha todos os campos!");
+  return;
+  }
       const telefone = "5521975828946";
 
       const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
@@ -145,11 +150,6 @@
       const url = `https://wa.me/${telefone}?text=${msgform}`;
 
       window.open(url, "_blank");
-    }
-    if (!nome || !mensagem) {
-  e.preventDefault();
-  console.log("Campos vazios");
-  return;
 }
   const menuToggle = document.getElementById("menuToggle");
   const menu = document.getElementById("menu");
