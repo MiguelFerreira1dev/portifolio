@@ -1,157 +1,160 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Miguel Ferreira | Dev</title>
-    <link rel="stylesheet" href="main.css"/>
-    <link rel="icon" size="32x32" href="./img/favicon.png" type="image/png"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon.png"/>
-  </head>
-  <body>
-    <span class="particles"> </span>
-    <header>
-      <nav class="navbar">
-        <ul class="menu">
-          <li><a href="#inicio" class="nav-links">Ínicio</a></li>
-          <li><a href="#sobre" class="nav-links">Sobre</a></li>
-          <li><a href="#formacao" class="nav-links">Formação</a></li>
-          <li><a href="#projetos" class="nav-links">Projetos</a></li>
-          <li><a href="#news" class="nav-links">Novidades</a></li>
-          <li><a href="#contato" class="nav-links">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main id="inicio" class="main">
-      <img src="./img/pfp.png" alt="Foto de Miguel Ferreira" class="foto-pfp" />
-      <h1>Miguel Ferreira</h1>
-      <p class="main-p">Estudante de Ciência da computação</p>
-    </main>
-    <section id="sobre" class="sobre">
-      <h2 class="sobre-title">Sobre Mim</h2>
-      <div class="sobre-box">
-        <p class="sobre-p">
-          Olá! Sou Miguel Ferreira, Tenho grande interesse pela área
-          de tecnologia e estou em constante busca por evolução, adquirindo
-          novos conhecimentos e aprimorando minhas habilidades técnicas. Meu
-          objetivo é desenvolver soluções eficientes e inovadoras para problemas
-          reais, utilizando a tecnologia como ferramenta principal para impactar
-          positivamente o dia a dia das pessoas.
-        </p>
-        <h2 id="formacao" class="form-title">Formação</h2>
-        <p class="sobre-p">
-          <ul>
-            <li>
-              Inglês – C2
-              <br>CCAA (2019–2024)
-              </li>
-              <li>
-                Bacharelado em Ciencia da Computação
-              <br>Univerdade Veiga de Almeida (UVA) (2026-2029)
-              </li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miguel Ferreira | Dev</title>
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="icon" size="32x32" href="./img/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon.png" />
+</head>
+
+<body>
+  <span class="particles"> </span>
+  <header>
+    <nav class="navbar">
+      <ul class="menu" id="menu">
+        <li><a href="#inicio" class="nav-links">Ínicio</a></li>
+        <li><a href="#sobre" class="nav-links">Sobre</a></li>
+        <li><a href="#formacao" class="nav-links">Formação</a></li>
+        <li><a href="#projetos" class="nav-links">Projetos</a></li>
+        <li><a href="#news" class="nav-links">Novidades</a></li>
+        <li><a href="#contato" class="nav-links">Contato</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">
+  ☰
+</div>
+    </nav>
+  </header>
+  <main id="inicio" class="main">
+    <img src="./img/pfp.png" alt="Foto de Miguel Ferreira" class="foto-pfp" />
+    <h1>Miguel Ferreira</h1>
+    <p class="main-p">Estudante de Ciência da computação</p>
+  </main>
+  <section id="sobre" class="sobre">
+    <h2 class="sobre-title">Sobre Mim</h2>
+    <div class="sobre-box">
+      <p class="sobre-p">
+        Olá! Sou Miguel Ferreira, Tenho grande interesse pela área
+        de tecnologia e estou em constante busca por evolução, adquirindo
+        novos conhecimentos e aprimorando minhas habilidades técnicas. Meu
+        objetivo é desenvolver soluções eficientes e inovadoras para problemas
+        reais, utilizando a tecnologia como ferramenta principal para impactar
+        positivamente o dia a dia das pessoas.
+      </p>
+      <h2 id="formacao" class="form-title">Formação</h2>
+      <span class="sobre-p">
+      <ul>
+        <li>
+          Inglês – C2
+          <br>CCAA (2019–2024)
+        </li>
+        <li>
+          Bacharelado em Ciencia da Computação
+          <br>Univerdade Veiga de Almeida (UVA) (2026-2029)
+        </li>
+      </ul>
+      </span>
+    </div>
+  </section>
+  <section id="projetos" class="sobre">
+    <h2 class="projetos-title">Meus Projetos</h2>
+    <div class="projetos-box">
+      <div class="projetos-card">
+        <img src="./img/projeto-1.png" class="projetos-img" />
+        <h3 class="projetos-info">Site Pessoal</h3>
+        <p class="projetos-p">
+          Site pessoal profissional feito com HTML, CSS, JS
         </p>
       </div>
-    </section>
-    <section id="projetos" class="sobre">
-      <h2 class="projetos-title">Meus Projetos</h2>
-      <div class="projetos-box">
+      <div class="projetos-card">
+        <img src="./img/projeto-1.png" class="projetos-img" />
+        <h3 class="projetos-info">Site Pessoal</h3>
+        <p class="projetos-p">Site pessoal profissional feito com HTML, CSS, JS</p>
+      </div>
+      <div class="projetos-card">
+        <img src="./img/projeto-1.png" class="projetos-img" />
+        <h3 class="projetos-info">Site Pessoal</h3>
+        <p class="projetos-p">Site pessoal profissional feito com HTML, CSS, JS</p>
+      </div>
+    </div>
+  </section>
+  <section id="news" class="sobre">
+    <h2 class="projetos-title">Novidades</h2>
+    <div class="projetos-box">
+      <a href="https://www.metropoles.com/esportes/brasileirao-veja-os-melhores-momentos-de-fluminense-x-atletico-mg"
+        target="_blank">
         <div class="projetos-card">
-          <img src="./img/projeto-1.png" class="projetos-img" />
-          <h3 class="projetos-info">Site Pessoal</h3>
+          <img src="./img/flu-win.png" alt="" class="projetos-img" />
+          <h3 class="projetos-info">Fluminense X Atlético Mineiro</h3>
           <p class="projetos-p">
-            Site pessoal profissional feito com HTML, CSS, JS
+            Fluminense venceu o Atlético-MG por 1 x 0 com gol do estreante
+            Castillo e chegou a 16 pontos no Campeonato Brasiliero.
           </p>
         </div>
+      </a>
+      <a href="https://www.oficinadanet.com.br/brasil/68253-eca-digital-lei-felca-guia-completo-protecao-criancas-internet-brasil-2026"
+        target="_blank">
         <div class="projetos-card">
-          <img src="./img/projeto-1.png" class="projetos-img" />
-          <h3 class="projetos-info">Site Pessoal</h3>
-          <p class="projetos-p">Site pessoal profissional feito com HTML, CSS, JS</p>
+          <img src="./img/lei eca.png" alt="" class="projetos-img" />
+          <h3 class="projetos-info">Lei ECA Digital</h3>
+          <p class="projetos-p">
+            ECA Digital, a Lei Felca, já está em vigor: neste guia completo
+            entenda como isso protege as crianças no mundo online.
+          </p>
         </div>
+      </a>
+      <a href="https://veja.abril.com.br/cultura/homem-aranha-um-novo-dia-ganha-primeiro-trailer-cheio-de-participacoes-especiais/#google_vignette"
+        target="_blank">
         <div class="projetos-card">
-          <img src="./img/projeto-1.png" class="projetos-img" />
-          <h3 class="projetos-info">Site Pessoal</h3>
-          <p class="projetos-p">Site pessoal profissional feito com HTML, CSS, JS</p>
+          <img src="./img/spider-new.png" alt="" class="projetos-img" />
+          <h3 class="projetos-info">Homem Aranha: Um Novo Dia</h3>
+          <p class="projetos-p">
+            O trailer de "Homem-Aranha: Um Novo Dia" foi divulgado nesta
+            quarta-feira (18). Com estreia marcada para 30 de julho.
+          </p>
         </div>
+      </a>
+    </div>
+  </section>
+  <section id="contato" class="contato">
+    <h2 class="contato-title">Entre em Contato</h2>
+    <form class="contato-form" id="form" onsubmit="sendmsg(event)">
+      <div class="contato-div">
+        <input placeholder="Nome" id="nome" class="contato-nome-form" />
+        <textarea rows="7" id="mensagem" class="contato-nome-form" placeholder="Digite Sua Mensagem"></textarea>
       </div>
-    </section>
-    <section id="news" class="sobre">
-      <h2 class="projetos-title">Novidades</h2>
-      <div class="projetos-box">
-        <a
-          href="https://www.metropoles.com/esportes/brasileirao-veja-os-melhores-momentos-de-fluminense-x-atletico-mg"
-          target="_blank"
-        >
-          <div class="projetos-card">
-            <img src="./img/flu-win.png" alt="" class="projetos-img" />
-            <h3 class="projetos-info">Fluminense X Atlético Mineiro</h3>
-            <p class="projetos-p">
-              Fluminense venceu o Atlético-MG por 1 x 0 com gol do estreante
-              Castillo e chegou a 16 pontos no Campeonato Brasiliero.
-            </p>
-          </div>
-        </a>
-        <a
-          href="https://www.oficinadanet.com.br/brasil/68253-eca-digital-lei-felca-guia-completo-protecao-criancas-internet-brasil-2026"
-          target="_blank"
-        >
-          <div class="projetos-card">
-            <img src="./img/lei eca.png" alt="" class="projetos-img" />
-            <h3 class="projetos-info">Lei ECA Digital</h3>
-            <p class="projetos-p">
-              ECA Digital, a Lei Felca, já está em vigor: neste guia completo
-              entenda como isso protege as crianças no mundo online.
-            </p>
-          </div>
-        </a>
-        <a
-          href="https://veja.abril.com.br/cultura/homem-aranha-um-novo-dia-ganha-primeiro-trailer-cheio-de-participacoes-especiais/#google_vignette"
-          target="_blank"
-        >
-          <div class="projetos-card">
-            <img src="./img/spider-new.png" alt="" class="projetos-img" />
-            <h3 class="projetos-info">Homem Aranha: Um Novo Dia</h3>
-            <p class="projetos-p">
-              O trailer de "Homem-Aranha: Um Novo Dia" foi divulgado nesta
-              quarta-feira (18). Com estreia marcada para 30 de julho.
-            </p>
-          </div>
-        </a>
-      </div>
-    </section>
-    <section id="contato" class="contato">
-      <h2 class="contato-title">Entre em Contato</h2>
-      <form class="contato-form" id="form" onsubmit="sendmsg(event)">
-        <div class="contato-div">
-          <input placeholder="Nome" id="nome" class="contato-nome-form" />
-          <textarea
-            rows="7"
-            id="mensagem"
-            class="contato-nome-form"
-            placeholder="Digite Sua Mensagem"
-          ></textarea>
-        </div>
-        <button type="submit" class="button-contato">Enviar Whatsapp</button>
-      </form>
-    </section>
-    <script>
-      function sendmsg(event) {
-        event.preventDefault()
+      <button type="submit" class="button-contato">Enviar Whatsapp</button>
+    </form>
+  </section>
+  <script>
+    function sendmsg(event) {
+      event.preventDefault()
 
-        const nome = document.getElementById("nome").value;
-        const mensagem = document.getElementById("mensagem").value;
-        const telefone = "5521975828946";
+      const nome = document.getElementById("nome").value;
+      const mensagem = document.getElementById("mensagem").value;
+      const telefone = "5521975828946";
 
-        const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
-        const msgform = encodeURIComponent(texto);
+      const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+      const msgform = encodeURIComponent(texto);
 
-        const url = `https://wa.me/${telefone}?text=${msgform}`;
+      const url = `https://wa.me/${telefone}?text=${msgform}`;
 
-        window.open(url, "_blank");
-      }
-    </script>
-    <footer>
-      <h3>© 2026 Miguel Ferreira. Todos os direitos reservados.</h3>
-    </footer>
-  </body>
+      window.open(url, "_blank");
+    }
+  </script>
+  <footer>
+    <h3>© 2026 Miguel Ferreira. Todos os direitos reservados.</h3>
+  </footer>
+  <script>
+  const menuToggle = document.getElementById("menuToggle");
+  const menu = document.getElementById("menu");
+
+                menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+</script>
+</body>
+
 </html>
