@@ -146,16 +146,17 @@
 
       window.open(url, "_blank");
     }
+    if (!nome || !mensagem) {
+  e.preventDefault();
+  console.log("Campos vazios");
+  return;
+}
   const menuToggle = document.getElementById("menuToggle");
   const menu = document.getElementById("menu");
 
                 menuToggle.addEventListener("click", () => {
     menu.classList.toggle("active");
   });
-    if (!nome || !mensagem) {
-  e.preventDefault();
-  console.log("Campos vazios");
-}
 </script>
 </body>
 
