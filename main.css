@@ -223,7 +223,7 @@ footer {
 }
 li{
   font-size: 1.25rem;
-  margin-left: 2.3rem;
+  list-style-position: inside;
 }
 .form-title{
   font-size: 2.5rem;
